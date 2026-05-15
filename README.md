@@ -7,6 +7,8 @@
 > 오시히키 판단처럼 **결정 보조**에 있다.
 
 설계 상세는 [PLAN.md](PLAN.md) 참조.
+모듈 구조·튜닝 포인트는 [AGENTS.md](AGENTS.md).
+다음 AI 에이전트(Claude/GPT 등)에게 작업 인계 시 [AGENT_HANDOFF.md](AGENT_HANDOFF.md) 전달.
 
 ---
 
