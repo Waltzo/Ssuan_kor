@@ -301,11 +301,14 @@ ssuan_kor/
   - [x] 부로 판단 (콜/스킵) — 샹텐 진전·역 확보·멘젠 손실 평가
   - [x] 상대 역 예측 (버림패·부로 패턴 → 탕야오·혼/청일색·역패·또이또이)
   - [x] 점수상황·착순 전략 (1등사수/추격/라스회피/표준 모드)
-- [~] **Phase 4 (선행)**: 오버레이 UI 셸 — *기본 동작 가능*
+- [x] **Phase 4**: 오버레이 UI + 실시간 + 패키징 — *완료*
   - [x] PyQt6 frameless / translucent / always-on-top + 드래그 이동
   - [x] 입력란(명령 처리) + 결과 패널
   - [x] 클릭 통과 토글 (F8, Windows), 투명도 조절 (F2/F3)
-  - [ ] 작혼 창 위치 자동 추적 (인식 레이어 동반)
-  - [ ] PyInstaller 패키징
-- [x] **테스트**: 68/68 통과 (분석 엔진 + 인식 인프라)
+  - [x] 작혼 창 자동 추적 (`WindowTracker` — 폴링 기반)
+  - [x] 실시간 캡처 루프 (`CaptureLoop` — 별도 스레드, 프레임 dedup)
+  - [x] 인식 워커 통합 (`RecognitionWorker` — 추적+캡처+인식 → 시그널)
+  - [x] 라이브 모드 (`--overlay --live --theme <name>`) — 자동 인식·분석 갱신
+  - [x] PyInstaller spec(`ssuan_kor.spec`) + 빌드 스크립트(`tools/build_exe.py`)
+- [x] **테스트**: 77/77 통과 (분석 엔진 + 인식 + 캡처 워커)
 - [x] **문서화**: README.md (사용·명령·데모) + AGENTS.md (아키텍처·의존 그래프·튜닝 포인트)
