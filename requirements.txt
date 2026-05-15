@@ -1,0 +1,25 @@
+# === 화면 캡처 ===
+dxcam>=0.0.5 ; platform_system == "Windows"
+mss>=9.0.1
+pywin32>=306 ; platform_system == "Windows"
+
+# === 이미지 처리 ===
+opencv-python>=4.9.0
+numpy>=1.26.0
+Pillow>=10.2.0
+
+# === 마작 로직 ===
+mahjong>=1.2.1
+
+# === 오버레이 UI ===
+PyQt6>=6.6.0
+
+# === 설정 ===
+pydantic>=2.6.0
+PyYAML>=6.0.1
+
+# === 테스트 ===
+pytest>=8.0.0
+
+# === 빌드 (선택) ===
+# pyinstaller>=6.0  ; Windows에서 .exe 빌드할 때만 설치
